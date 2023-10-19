@@ -6,21 +6,21 @@ type Applicant interface {
 	IsSatisfiedBy(a model.Applicant) bool
 }
 
-type OrApplicant struct {
+type AndApplicant struct {
 	specs []Applicant
 }
 
-func (o OrApplicant) IsSatisfiedBy(a model.Applicant) bool {
-	for _, spec := range o.specs {
-		if !spec.IsSatisfiedBy(a) {
+func (a AndApplicant) IsSatisfiedBy(app model.Applicant) bool {
+	for _, spec := range a.specs {
+		if !spec.IsSatisfiedBy(app) {
 			return false
 		}
 	}
 	return true
 }
 
-func NewOrApplicant(specs ...Applicant) OrApplicant {
-	return OrApplicant{
+func NewAndApplicant(specs ...Applicant) AndApplicant {
+	return AndApplicant{
 		specs: specs,
 	}
 }

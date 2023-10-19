@@ -34,7 +34,7 @@ func main() {
 
 	cfg := config.NewApplicant()
 
-	spec := specification.NewOrApplicant(
+	spec := specification.NewAndApplicant(
 		specification.NewAge(cfg.MinAge),
 		specification.NewGender(cfg.ValidGenders),
 		specification.NewLocation(cfg.ValidLocations),

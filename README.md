@@ -15,4 +15,4 @@ go run main.go
 ```
 
 ## Further Reading
-To read more about the specification pattern and this code example, visit the blog post https://thegodev.com/specification-pattern.
+To read more about the specification pattern and this code example, visit the blog post https://camerontrew.com/blog/start-using-the-specification-pattern-in-golang-now/

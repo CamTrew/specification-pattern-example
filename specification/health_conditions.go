@@ -1,6 +1,6 @@
 package specification
 
-import "github.com/thegodev/specification-pattern-example/model"
+import "github.com/CamTrew/specification-pattern-example/model"
 
 type HealthConditions struct{}
 

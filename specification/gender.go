@@ -3,7 +3,7 @@ package specification
 import (
 	"slices"
 
-	"github.com/thegodev/specification-pattern-example/model"
+	"github.com/CamTrew/specification-pattern-example/model"
 )
 
 type Gender struct {

@@ -6,9 +6,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/thegodev/specification-pattern-example/config"
-	"github.com/thegodev/specification-pattern-example/model"
-	"github.com/thegodev/specification-pattern-example/specification"
+	"github.com/CamTrew/specification-pattern-example/config"
+	"github.com/CamTrew/specification-pattern-example/model"
+	"github.com/CamTrew/specification-pattern-example/specification"
 )
 
 func filter(as []model.Applicant, spec specification.Applicant) []model.Applicant {
